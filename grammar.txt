@@ -1,59 +1,35 @@
 statements  : NEWLINE* statement (NEWLINE+ statement)* NEWLINE*
 
-statement		: KEYWORD:RETURN expr?
-						: KEYWORD:CONTINUE
-						: KEYWORD:BREAK
-						: expr
+INICIAR     : KEYWORD: programa Declara Bloco
 
-expr        : KEYWORD:DECLARE IDENTIFIER EQ expr
-            : comp-expr ((KEYWORD:AND|KEYWORD:OR) comp-expr)*
+DECLARAR    : KEYWORD: DECLARE
 
-comp-expr   : NOT comp-expr
-            : arith-expr ((EE|LT|GT|LTE|GTE) arith-expr)*
+FINALIZAR   : KEYWORD: FIMPROG
 
-arith-expr  :	term ((PLUS|MINUS) term)*
+arith-expr  :	term ((+|-) term)*
 
 term        : factor ((MUL|DIV) factor)*
 
-factor      : (PLUS|MINUS) factor
-            : power
-
 power       : call (POW factor)*
 
-call        : atom (LPAREN (expr (COMMA expr)*)? RPAREN)?
-
 atom        : INT|FLOAT|STRING|IDENTIFIER
-            : LPAREN expr RPAREN
-            : list-expr
             : if-expr
             : for-expr
             : while-expr
-            : func-def
 
-list-expr   : LSQUARE (expr (COMMA expr)*)? RSQUARE
-
-if-expr     : KEYWORD:IF expr KEYWORD:THEN
+if-expr     : KEYWORD:SE expr KEYWORD:ENTAO
               (statement if-expr-b|if-expr-c?)
             | (NEWLINE statements KEYWORD:END|if-expr-b|if-expr-c)
 
-if-expr-b   : KEYWORD:ELIF expr KEYWORD:THEN
+if-expr-b   : KEYWORD:SENAOSE expr KEYWORD:ENTAO
               (statement if-expr-b|if-expr-c?)
             | (NEWLINE statements KEYWORD:END|if-expr-b|if-expr-c)
 
-if-expr-c   : KEYWORD:ELSE
+if-expr-c   : KEYWORD:SENAO
               statement
             | (NEWLINE statements KEYWORD:END)
 
-for-expr    : KEYWORD:FOR IDENTIFIER EQ expr KEYWORD:TO expr 
-              (KEYWORD:STEP expr)? KEYWORD:THEN
+while-expr  : KEYWORD:ENQUANTO expr KEYWORD:ENTAO
               statement
             | (NEWLINE statements KEYWORD:END)
-
-while-expr  : KEYWORD:WHILE expr KEYWORD:THEN
-              statement
-            | (NEWLINE statements KEYWORD:END)
-
-func-def    : KEYWORD:FUN IDENTIFIER?
-              LPAREN (IDENTIFIER (COMMA IDENTIFIER)*)? RPAREN
-              (ARROW expr)
-            | (NEWLINE statements KEYWORD:END)
+            
