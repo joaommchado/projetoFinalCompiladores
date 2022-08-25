@@ -1,0 +1,7 @@
+programa Declara Bloco
+DECLARE A = 1 + 1
+SE 5 == 6 ENTAO 124 SENAO 53424
+ENQUANTO A < 30 ENTAO DECLARE A = A + 1
+ESCREVA A
+ESCREVA 1+1
+fimprog
