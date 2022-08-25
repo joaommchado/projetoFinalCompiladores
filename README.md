@@ -1,5 +1,12 @@
 # Projeto Final Compiladores
 
+## Integrantes
+João Pedro Ribeiro Machado 11201720180
+Henrique Eugenio 11201720092
+Gustavo Seiji Ueti 11201722333
+Matthaeus Gomes de Campos 11201722092
+
+
 ## Features
 ### Itens obrigatórios
 
@@ -11,12 +18,12 @@
 - [x] Aceitar números decimais
 - [x] Verificar se variável foi ou não declarada
 - [x] Verificar se variável declarada foi ou não utilizada
-- [x] Linguagem Destino (C/Java/Python): Java
+- [x] Linguagem Destino (C/Java/Python): Python
 
 ### Itens adicionais
 - [x] Estrutura adicional de loop (for)
-- [x] Comentário
-- [x] Temporizador de compilação
+- [ ] Comentário
+- [ ] Temporizador de compilação
 - [x] Potenciação e resto de divisão
 - [x] Raiz quadrada
 
