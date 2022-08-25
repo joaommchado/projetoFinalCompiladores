@@ -11,7 +11,7 @@ Matthaeus Gomes de Campos 11201722092
 ## Features
 ### Itens obrigatórios
 
-- [x] Possuir 2 tipos de variáveis (float, int, string)
+- [x] Possuir 3 tipos de variáveis (float, int, string)
 - [x] Possuir a instrução if-else
 - [x] Pelo menos 1 estrutura de repetição (while)
 - [x] Verificar atribuição de variáveis (erro semântico) - compatibilidade de tipos
