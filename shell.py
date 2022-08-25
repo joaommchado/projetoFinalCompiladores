@@ -7,12 +7,10 @@ data = my_file.read()
 data_into_list = data.split("\n")
 my_file.close()
 i = 0
-print(data_into_list)
 
 verificao = firstParser(data_into_list)
 data_into_list, index, validador = verificao.retornar_final()
 
-print(data_into_list)
 
 if validador:
 	while i < len(data_into_list):
