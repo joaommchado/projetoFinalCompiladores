@@ -27,6 +27,5 @@
  (>{path ate o projeto})
 sh
 python3 shell.py
-3-Execute o run na MainClass.java dentro do pacote main
 
 Seguindo esses comandos, o projeto compilará o documento shell.py e gerará os retornos tanto dos prints.
