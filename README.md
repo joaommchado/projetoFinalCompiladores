@@ -21,11 +21,9 @@
 - [x] Raiz quadrada
 
 ## Getting started
-1 - Adicione o ANTLR jar no Classpath do projeto
-
-2 - Para gerar o código da documentação IsiLang.g4, rode o seguinte comando no primeiro nível do projeto
+1 - Para gerar a resposta do compilador a partir do arquivo .txt escrito em isiLanguage, rode o seguinte comando no primeiro nível do projeto
  (>{path ate o projeto})
 sh
 python3 shell.py
 
-Seguindo esses comandos, o projeto compilará o documento shell.py e gerará os retornos tanto dos prints.
+Com isso, o projeto compilará o documento shell.py e gerará os retornos tanto dos prints.
