@@ -4,6 +4,7 @@
 João Pedro Ribeiro Machado 11201720180
 Henrique Eugenio 11201720092
 Gustavo Seiji Ueti 11201722333
+Leonardo Pironccelli 11054716
 Matthaeus Gomes de Campos 11201722092
 
 
